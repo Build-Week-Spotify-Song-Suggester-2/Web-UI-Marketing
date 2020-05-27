@@ -176,7 +176,18 @@ nav .links a {
 nav .links a:hover {
   color: white;
 }
-.githubs {
+#cta {
+  border: 2px solid hotpink;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(transparent, #19E68C), url('https://images.unsplash.com/photo-1582730147924-d92f4da00252?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+#githubs {
   border: 2px solid gold;
   height: 50vh;
   display: flex;
@@ -184,10 +195,10 @@ nav .links a:hover {
   justify-content: space-around;
   align-items: center;
 }
-.githubs h3 {
+#githubs h3 {
   font-size: 30px;
 }
-.githubs #student-profile {
+#githubs .student-profile {
   border: 1px dotted pink;
   display: flex;
   justify-content: center;
@@ -195,6 +206,6 @@ nav .links a:hover {
   color: black;
   font-size: 40px;
 }
-.githubs #student-profile:hover {
+#githubs .student-profile:hover {
   color: red;
 }
