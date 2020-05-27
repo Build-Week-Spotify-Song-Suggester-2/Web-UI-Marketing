@@ -148,6 +148,22 @@ nav {
     align-items: center;
   }
 }
+nav .logo {
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav .logo p {
+  font-size: 50px;
+  padding: 4%;
+}
+nav .logo h1 {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  color: #1DB954;
+}
 nav .links {
   border: 1px solid lime;
   width: 40%;
@@ -170,6 +186,11 @@ nav .links a {
 }
 nav .links a:hover {
   text-transform: lowercase;
+}
+nav .register {
+  border: 2px solid lime;
+  display: flex;
+  justify-self: flex-end;
 }
 .githubs {
   border: 2px solid gold;
