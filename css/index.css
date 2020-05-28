@@ -274,11 +274,12 @@ nav .links a:hover {
   font-size: 1.5rem;
 }
 #githubs {
-  height: 50vh;
+  height: 30vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  margin-top: 5%;
 }
 #githubs h3 {
   display: flex;
@@ -289,10 +290,13 @@ nav .links a:hover {
   text-shadow: 2px 2px 5px slategrey;
 }
 #githubs .dev-boxes {
+  border: 2px solid gold;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 150px;
 }
 #githubs .dev-boxes .student-profile {
   border: 2px solid black;
@@ -300,13 +304,48 @@ nav .links a:hover {
   display: flex;
   justify-content: center;
   text-decoration: none;
+  align-items: center;
+  text-align: center;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-radius: 5px;
-  padding: 3px;
-  width: 400px;
+  padding: 5px;
+  margin: 5px;
+  width: 350px;
+  height: 30%;
 }
 #githubs .dev-boxes .student-profile:hover {
   color: #19E68C;
   border: 2px solid #19E68C;
+}
+@media ( max-width:1600px ) {
+  #githubs .dev-boxes {
+    border: 2px solid red;
+    width: 60%;
+  }
+}
+@media ( max-width:1200px ) {
+  #githubs .dev-boxes {
+    border: 2px solid lime;
+    width: 90%;
+  }
+}
+@media ( max-width:800px ) {
+  #githubs .dev-boxes {
+    border: 2px solid hotpink;
+    width: 90%;
+  }
+  #githubs .dev-boxes .student-profile {
+    display: flex;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    font-size: 1rem;
+  }
+}
+@media ( max-width:600px ) {
+  #githubs .dev-boxes {
+    border: 2px solid gold;
+    width: 40%;
+  }
 }

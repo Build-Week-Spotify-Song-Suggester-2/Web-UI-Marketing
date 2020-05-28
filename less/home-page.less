@@ -69,11 +69,12 @@
 }
 
 #githubs{
-    height: 50vh;
+    height: 30vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-top: 5%;
 
     h3 {
         display: flex;
@@ -84,10 +85,14 @@
         text-shadow: 2px 2px 5px slategrey;
     }
     .dev-boxes{
+        border: 2px solid gold;
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
         justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        height: 150px;
+        
 
         .student-profile{
             border: 2px solid black;
@@ -95,16 +100,44 @@
             display: flex;
             justify-content: center;
             text-decoration: none;
+            align-items: center;
+            text-align: center;
             color: white;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             border-radius: 5px;
-            padding: 3px;
-            width: 400px;
+            padding: 5px;
+            margin: 5px;
+            width: 350px;
+            height: 30%;
 
             &:hover{
                 color: #19E68C;
                 border: 2px solid #19E68C;
             }
         }
+        @media @widescreen{
+            border: 2px solid red;
+            width: 60%;
+        }
+        @media @laptop{
+            border: 2px solid lime;
+            width: 90%;
+        }
+        @media @tablet{
+            border: 2px solid hotpink;
+            width: 90%;
+            .student-profile{
+                display: flex;
+                text-align: center;
+                width: 250px;
+                height: 50px;
+                font-size: 1rem;
+            }
+        }
+        @media @phone{
+            border: 2px solid gold;
+            width: 40%;
+        }
+        
     }
 }
