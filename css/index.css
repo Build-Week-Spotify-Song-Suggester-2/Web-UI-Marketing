@@ -213,7 +213,7 @@ nav .links a:hover {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #19E68C;
+  background: linear-gradient(transparent, #19E68C);
   margin-top: auto;
   height: 8vh;
   position: fixed;
@@ -296,13 +296,18 @@ nav .links a:hover {
     display: flex;
     justify-content: center;
     margin-top: 0;
-    border-radius: none;
   }
   #about-container .about-section {
     width: 100%;
+    border-radius: 0;
+  }
+  #about-container .about-section h2 {
+    margin-top: 5%;
   }
   #about-container .about-section p {
     font-size: 1.2rem;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 #githubs {
@@ -385,6 +390,8 @@ nav .links a:hover {
   #githubs .dev-boxes {
     border: 2px solid gold;
     width: 80%;
+    height: 1000px;
+    margin-bottom: 10%;
   }
   #githubs .dev-boxes .student-profile {
     display: flex;
@@ -392,6 +399,6 @@ nav .links a:hover {
     flex-flow: wrap;
     width: 300px;
     height: 50px;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 }
