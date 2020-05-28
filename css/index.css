@@ -290,6 +290,11 @@ nav .links a:hover {
   font-size: 1.5rem;
   text-align: center;
 }
+@media ( max-width:800px ) {
+  #about-container .about-section p {
+    font-size: 1.2rem;
+  }
+}
 @media ( max-width:600px ) {
   #about-container {
     width: 100%;
@@ -329,12 +334,10 @@ nav .links a:hover {
 }
 @media ( max-width:600px ) {
   #githubs h3 {
-    border: 2px solid gold;
     width: 80%;
   }
 }
 #githubs .dev-boxes {
-  border: 2px solid gold;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -363,19 +366,16 @@ nav .links a:hover {
 }
 @media ( max-width:1600px ) {
   #githubs .dev-boxes {
-    border: 2px solid red;
     width: 60%;
   }
 }
 @media ( max-width:1200px ) {
   #githubs .dev-boxes {
-    border: 2px solid lime;
     width: 90%;
   }
 }
 @media ( max-width:800px ) {
   #githubs .dev-boxes {
-    border: 2px solid hotpink;
     width: 90%;
   }
   #githubs .dev-boxes .student-profile {
@@ -388,17 +388,18 @@ nav .links a:hover {
 }
 @media ( max-width:600px ) {
   #githubs .dev-boxes {
-    border: 2px solid gold;
     width: 80%;
-    height: 1000px;
-    margin-bottom: 10%;
+    height: 750px;
+    margin-bottom: 15%;
+    margin-top: 5%;
+    justify-content: space-around;
   }
   #githubs .dev-boxes .student-profile {
     display: flex;
     text-align: center;
     flex-flow: wrap;
     width: 300px;
-    height: 50px;
+    height: 60px;
     font-size: 1.2rem;
   }
 }
