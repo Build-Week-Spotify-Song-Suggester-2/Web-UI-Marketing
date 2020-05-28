@@ -185,6 +185,18 @@ nav .links a {
 nav .links a:hover {
   color: white;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #19E68C;
+}
+footer p {
+  text-align: center;
+  color: #474646;
+  font-size: 1.6rem;
+  padding: 20px;
+}
 #cta {
   border: 2px solid hotpink;
   height: 40vh;
@@ -205,6 +217,17 @@ nav .links a:hover {
   display: flex;
   justify-content: center;
   width: 50%;
+}
+#smaller-body {
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+}
+#smaller-body .lorem {
+  width: 45%;
+}
+#smaller-body .ipsum {
+  width: 45%;
 }
 #githubs {
   border: 2px solid gold;
