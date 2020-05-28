@@ -194,6 +194,21 @@ nav .links a {
 nav .links a:hover {
   color: white;
 }
+@media ( max-width:600px ) {
+  nav {
+    filter: none;
+    height: 10vh;
+    flex-wrap: wrap;
+  }
+  nav .logo {
+    width: 100%;
+    justify-content: center;
+  }
+  nav .links {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
 .footer {
   display: flex;
   justify-content: center;
@@ -275,6 +290,21 @@ nav .links a:hover {
   font-size: 1.5rem;
   text-align: center;
 }
+@media ( max-width:600px ) {
+  #about-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    border-radius: none;
+  }
+  #about-container .about-section {
+    width: 100%;
+  }
+  #about-container .about-section p {
+    font-size: 1.2rem;
+  }
+}
 #githubs {
   height: 30vh;
   display: flex;
@@ -291,6 +321,12 @@ nav .links a:hover {
   color: black;
   font-weight: bold;
   text-shadow: 2px 2px 9px #19E68C;
+}
+@media ( max-width:600px ) {
+  #githubs h3 {
+    border: 2px solid gold;
+    width: 80%;
+  }
 }
 #githubs .dev-boxes {
   border: 2px solid gold;
@@ -348,6 +384,14 @@ nav .links a:hover {
 @media ( max-width:600px ) {
   #githubs .dev-boxes {
     border: 2px solid gold;
-    width: 40%;
+    width: 80%;
+  }
+  #githubs .dev-boxes .student-profile {
+    display: flex;
+    text-align: center;
+    flex-flow: wrap;
+    width: 300px;
+    height: 50px;
+    font-size: 0.8rem;
   }
 }
