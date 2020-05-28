@@ -190,6 +190,11 @@ nav .links a:hover {
   justify-content: center;
   width: 100%;
   background-color: #19E68C;
+  margin-top: auto;
+  height: 10vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 .footer p {
   text-align: center;
