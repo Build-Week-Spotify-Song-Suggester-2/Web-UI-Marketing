@@ -158,6 +158,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   color: white;
+  font-family: 'Montserrat';
 }
 nav {
   display: flex;
@@ -166,6 +167,14 @@ nav {
   filter: drop-shadow(3px 0 5px #a7a7a7);
   font-family: 'Poppins';
   color: #0c6d4e;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+nav .logo svg {
+  margin-right: 2%;
 }
 nav h1 {
   font-family: 'Montserrat';
@@ -191,15 +200,17 @@ nav .links a:hover {
   width: 100%;
   background-color: #19E68C;
   margin-top: auto;
-  height: 10vh;
+  height: 8vh;
   position: fixed;
   left: 0;
   bottom: 0;
 }
 .footer p {
+  display: flex;
+  align-items: center;
   text-align: center;
   color: #474646;
-  font-size: 1.6rem;
+  font-size: 1rem;
   padding: 20px;
 }
 #cta {
@@ -216,6 +227,7 @@ nav .links a:hover {
   justify-content: center;
   width: 100%;
   font-size: 3rem;
+  letter-spacing: 1px;
 }
 #cta p {
   border: 2px dotted red;
