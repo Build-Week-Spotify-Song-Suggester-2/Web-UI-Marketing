@@ -1,3 +1,14 @@
+.home-page-links {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-shadow: 4px 4px 10px black;
+  font-size: 1.5rem;
+  color: white;
+}
+.home-page-links:hover {
+  text-shadow: 2px 2px 5px #19E68C;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -201,7 +212,7 @@ nav .links a {
 nav .links a:hover {
   color: white;
 }
-@media ( max-width:600px ) {
+@media ( max-width:500px ) {
   nav {
     filter: none;
     height: 10vh;
@@ -288,6 +299,72 @@ nav .links a:hover {
   color: white;
   text-shadow: 4px 4px 10px slategray;
 }
+@media ( max-width:1200px ) {
+  #cta h2 {
+    font-size: 3rem;
+  }
+  #cta p {
+    font-size: 1.2rem;
+  }
+  #cta p a {
+    text-shadow: 2px 2px 5px black;
+    height: 1.2rem;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  #cta p a:hover {
+    color: white;
+    text-shadow: 2px 2px 5px slategray;
+  }
+}
+@media ( max-width:800px ) {
+  #cta {
+    height: 30vh;
+  }
+  #cta h2 {
+    font-size: 2.5rem;
+  }
+  #cta p {
+    font-size: 1.2rem;
+  }
+  #cta p a {
+    text-shadow: 2px 2px 5px black;
+    height: 1.2rem;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  #cta p a:hover {
+    color: white;
+    text-shadow: 2px 2px 5px slategray;
+  }
+}
+@media ( max-width:500px ) {
+  #cta {
+    height: 25vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #cta h2 {
+    font-size: 2rem;
+  }
+  #cta p {
+    font-size: 1.1rem;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  #cta p a {
+    text-shadow: 2px 2px 5px black;
+    height: 1.1rem;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  #cta p a:hover {
+    color: white;
+    text-shadow: 2px 2px 5px slategray;
+  }
+}
 #songs-artists-search {
   display: flex;
   justify-content: center;
@@ -338,6 +415,35 @@ nav .links a:hover {
 #songs-artists-search .artist-search a:hover {
   text-shadow: 2px 2px 5px #19E68C;
 }
+@media ( max-width:1200px ) {
+  #songs-artists-search {
+    display: flex;
+    height: 25vh;
+  }
+}
+@media ( max-width:800px ) {
+  #songs-artists-search {
+    height: 25vh;
+    justify-content: space-around;
+    margin-top: 10%;
+  }
+}
+@media ( max-width:500px ) {
+  #songs-artists-search {
+    height: 50vh;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #songs-artists-search .song-search {
+    width: 65%;
+  }
+  #songs-artists-search .artist-search {
+    width: 65%;
+  }
+}
 #about-container {
   display: flex;
   justify-content: center;
@@ -372,7 +478,7 @@ nav .links a:hover {
     font-size: 1.2rem;
   }
 }
-@media ( max-width:600px ) {
+@media ( max-width:500px ) {
   #about-container {
     width: 100%;
     display: flex;
@@ -409,7 +515,7 @@ nav .links a:hover {
   font-weight: bold;
   text-shadow: 2px 2px 9px #19E68C;
 }
-@media ( max-width:600px ) {
+@media ( max-width:500px ) {
   #githubs h3 {
     width: 80%;
   }
@@ -463,7 +569,7 @@ nav .links a:hover {
     font-size: 1rem;
   }
 }
-@media ( max-width:600px ) {
+@media ( max-width:500px ) {
   #githubs .dev-boxes {
     width: 80%;
     height: 750px;

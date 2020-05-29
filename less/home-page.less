@@ -39,6 +39,74 @@
             }
         }
     }
+    @media @laptop{
+        
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.2rem;
+
+            a{
+            text-shadow: 2px 2px 5px black;
+            height:1.2rem;
+            margin-left: 4px;
+            margin-right: 4px;
+
+            &:hover{
+                color:white;
+                text-shadow: 2px 2px 5px slategray;
+                }
+            }
+        }
+    }
+    @media @tablet{
+        height:30vh;
+        h2{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.2rem;
+            a{
+            text-shadow: 2px 2px 5px black;
+            height:1.2rem;
+            margin-left: 4px;
+            margin-right: 4px;
+
+            &:hover{
+                color:white;
+                text-shadow: 2px 2px 5px slategray;
+                }
+            }
+        }
+    }
+    @media @phone{
+        height: 25vh;
+        display: flex;
+        flex-wrap: wrap;
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.1rem;
+            width:50%;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+
+            a{
+            text-shadow: 2px 2px 5px black;
+            height:1.1rem;
+            margin-left: 3px;
+            margin-right: 3px;
+
+            &:hover{
+                color:white;
+                text-shadow: 2px 2px 5px slategray;
+                }
+            }
+        }
+    }
 }
 
 #songs-artists-search{
@@ -58,15 +126,7 @@
         justify-content: center;
         align-items: center;
         a{
-            display: flex;
-            justify-content: center;
-            align-self: center;
-            text-shadow: 4px 4px 10px black;
-            font-size: 1.5rem;
-            color:white;
-            &:hover{
-                text-shadow: 2px 2px 5px #19E68C;
-            }
+            .home-page-links();
         }
     }
     .artist-search{
@@ -80,15 +140,30 @@
         justify-content: center;
         align-items: center;
         a{
-            display: flex;
-            justify-content: center;
-            align-self: center;
-            text-shadow: 4px 4px 10px black;
-            font-size: 1.5rem;
-            color:white;
-            &:hover{
-                text-shadow: 2px 2px 5px #19E68C;
-            }
+            .home-page-links();
+        }
+    }
+    @media @laptop{
+        display: flex;
+        height: 25vh;
+    }
+    @media @tablet{
+        height: 25vh;
+        justify-content: space-around;
+        margin-top: 10%;
+    }
+    @media @phone{
+        height:50vh;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        .song-search{
+            width:65%;
+        }
+        .artist-search{
+            width:65%;
         }
     }
 }
