@@ -572,8 +572,8 @@ nav .links a:hover {
 @media ( max-width:500px ) {
   #githubs .dev-boxes {
     width: 80%;
-    height: 750px;
-    margin-bottom: 15%;
+    height: 75vh;
+    margin-bottom: 20%;
     margin-top: 5%;
     justify-content: space-around;
   }
