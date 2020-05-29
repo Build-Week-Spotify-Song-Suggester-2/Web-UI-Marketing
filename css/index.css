@@ -254,7 +254,8 @@ nav .links a:hover {
   justify-content: center;
   width: 100%;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
+  margin-top: 5%;
   letter-spacing: 1px;
   text-shadow: 4px 4px 10px black;
 }
@@ -262,23 +263,26 @@ nav .links a:hover {
   border: 2px dotted red;
   display: flex;
   justify-content: center;
-  width: 50%;
-  font-size: 1.5rem;
+  align-items: center;
+  width: 100%;
+  font-size: 1.6rem;
   text-shadow: 2px 2px 8px black;
-  height: 50px;
+  height: 20%;
 }
 #cta p a {
   text-decoration: none;
   color: #19E68C;
   font-weight: bold;
   text-shadow: 4px 4px 10px black;
+  height: 1.5rem;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 #cta p a:hover {
   color: white;
   text-shadow: 4px 4px 10px slategray;
 }
 #songs-artists-search {
-  border: 2px dotted gold;
   display: flex;
   justify-content: center;
   height: 35vh;
