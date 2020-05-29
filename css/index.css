@@ -212,6 +212,7 @@ nav .links a:hover {
 .footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   background: linear-gradient(transparent, #19E68C);
   margin-top: auto;
@@ -225,8 +226,19 @@ nav .links a:hover {
   align-items: center;
   text-align: center;
   color: #474646;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 20px;
+  height: 20px;
+  border-right: 2px solid black;
+}
+.footer img {
+  margin-left: 20px;
+  width: 100px;
+  height: 30px;
+}
+.footer img:hover {
+  width: 101px;
+  height: 31px;
 }
 #cta {
   border: 2px solid hotpink;
