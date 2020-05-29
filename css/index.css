@@ -502,7 +502,7 @@ footer img:hover {
 }
 @media ( max-width:800px ) {
   #about-container .about-section p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 @media ( max-width:500px ) {
@@ -520,7 +520,7 @@ footer img:hover {
     margin-top: 5%;
   }
   #about-container .about-section p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-left: 50px;
     padding-right: 50px;
   }
