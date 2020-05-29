@@ -9,6 +9,16 @@
 .home-page-links:hover {
   text-shadow: 2px 2px 5px #19E68C;
 }
+.song-artist-search-background-sizing {
+  height: 100%;
+  width: 40%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -227,7 +237,7 @@ nav .links a:hover {
     justify-content: space-evenly;
   }
 }
-.footer {
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,7 +249,7 @@ nav .links a:hover {
   left: 0;
   bottom: 0;
 }
-.footer p {
+footer p {
   display: flex;
   align-items: center;
   text-align: center;
@@ -249,15 +259,32 @@ nav .links a:hover {
   height: 40px;
   border-right: 2px solid black;
 }
-.footer img {
+footer img {
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 70px;
   width: 100px;
   height: 30px;
 }
-.footer img:hover {
+footer img:hover {
   width: 101px;
   height: 31px;
+}
+@media ( max-width:500px ) {
+  .footer-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: static;
+    margin-top: 100%;
+  }
+  .footer-about p {
+    margin-bottom: 2%;
+    border-right: none;
+  }
+  .footer-about img {
+    margin-bottom: 5%;
+    margin-right: 40px;
+  }
 }
 #cta {
   height: 40vh;
@@ -372,9 +399,9 @@ nav .links a:hover {
   margin-top: 2%;
 }
 #songs-artists-search .song-search {
+  background: url("https://images.unsplash.com/photo-1526815456940-2c11653292a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   height: 100%;
   width: 40%;
-  background: url("https://images.unsplash.com/photo-1526815456940-2c11653292a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -394,9 +421,9 @@ nav .links a:hover {
   text-shadow: 2px 2px 5px #19E68C;
 }
 #songs-artists-search .artist-search {
+  background: url("https://images.unsplash.com/photo-1508161887025-ebd8f2813550?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   height: 100%;
   width: 40%;
-  background: url("https://images.unsplash.com/photo-1508161887025-ebd8f2813550?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -435,13 +462,13 @@ nav .links a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   #songs-artists-search .song-search {
-    width: 65%;
+    width: 60%;
   }
   #songs-artists-search .artist-search {
-    width: 65%;
+    width: 60%;
   }
 }
 #about-container {
