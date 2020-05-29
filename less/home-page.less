@@ -11,6 +11,7 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        text-align: center;
         font-size: 3rem;
         letter-spacing: 1px;
         text-shadow: 4px 4px 10px black;
@@ -37,16 +38,56 @@
     }
 }
 
-#smaller-body{
+#songs-artists-search{
+    border: 2px dotted gold;
     display: flex;
     justify-content: center;
-    height: 40vh;
+    height: 35vh;
+    margin-top: 2%;
 
-    .lorem{
-        width: 45%;
+    .song-search{
+        height:100%;
+        width:40%;
+        background: url("https://images.unsplash.com/photo-1526815456940-2c11653292a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            text-shadow: 4px 4px 10px black;
+            font-size: 1.5rem;
+            color:white;
+            &:hover{
+                text-shadow: 2px 2px 5px #19E68C;
+            }
+        }
     }
-    .ipsum{
-        width: 45%;
+    .artist-search{
+        height:100%;
+        width:40%;
+        background: url("https://images.unsplash.com/photo-1508161887025-ebd8f2813550?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            text-shadow: 4px 4px 10px black;
+            font-size: 1.5rem;
+            color:white;
+            &:hover{
+                text-shadow: 2px 2px 5px #19E68C;
+            }
+        }
     }
 }
 
